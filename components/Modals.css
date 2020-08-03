@@ -1,0 +1,329 @@
+﻿.modal_bg{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(250, 250, 250, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5000;
+  display: none;
+}
+.modal_bg > div{
+  display: none;
+}
+.thx_modal{
+  padding: 10px;
+  background: #fff;
+  width: 380px;
+  height: 140px;
+  box-shadow: 7px 8px 55px rgba(51, 51, 51, 0.15);
+  border-radius: 5px;
+  padding: 45px 0;
+  box-sizing: border-box;
+}
+.thx_modal .modal_content{
+  text-align: center;
+}
+.thx_modal .modal_content .name{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+.thx_modal .modal_content .text{
+  font-size: 14px;
+  line-height: 21px;
+}
+.close_button{
+  position: absolute !important;
+  right: 20px;
+  top: 20px;
+  z-index: 10;
+  width: 14px;
+  height: 14px;
+  background: url(/img/icon/modal-cross-ico.svg) center no-repeat;
+/*   background: #00CCBA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F3F3F3;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%; */
+  cursor: pointer;
+}
+.buy-in-one{
+  width: 100%;
+  max-width: 1200px;
+  box-shadow: 7px 8px 55px rgba(51, 51, 51, 0.15);
+}
+.buy-in-one .modal_content{
+  display: flex;
+  border-radius: 5px;
+}
+.buy-in-one .modal_content .img_box{
+  width: 30%;
+  background: #fff;
+  height: 400px;
+  padding: 45px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buy-in-one .modal_content .detail_box{
+  width: 70%;
+  background: #F7F7F9;
+  height: 400px;
+  padding: 45px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.buy-in-one .modal_content .detail_box .name{
+  font-weight: bold;
+font-size: 26px;
+line-height: 39px;
+margin: 15px 0;
+display: inline-block;
+}
+.buy-in-one-form .input_box{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top:40px;
+
+}
+.buy-in-one-form .input_box > input{
+  height: 45px;
+  width: calc(33% - 12px);
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+.buy-in-one-form button{
+  background: #F19515;
+border-radius: 2px;
+height: 50px;
+width: 205px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 600;
+font-size: 14px;
+color: #FFFFFF;
+border: none;
+}
+.registration_modal{
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  background: #fff;
+}
+.registration_modal .content_box{
+  width: 60%;
+  height: 480px;
+  padding: 0 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.registration_modal .img_box_registration{
+  width: 40%;
+  height: 480px;
+  background: url(/img/registratio-bg.png) center/cover no-repeat;
+}
+.registration_modal .tab_section{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+}
+.registration_modal .tab_section > div{
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  color: #B3B3B4;
+  margin-right: 45px;
+}
+.registration_modal .tab_section > div.active{
+  color: #F19515;
+}
+.registration_modal .tab_section > div.active::after{
+  content: "";
+  display: block;
+  width: 50%;
+  height: 3px;
+  background: #F19515;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+}
+.registration_modal .input_box{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.registration_modal .input_box > input{
+  height: 45px;
+  width: calc(33% - 12px);
+  background: #F7F7F9;
+  border: 1px solid #EBEBEB;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+.registration_form .sex_box{
+  display: flex;
+  margin: 0 0 25px 0;
+}
+.sex_box >span{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(51, 51, 51, 0.7);
+  display: inline-block;
+  margin-right: 25px;
+}
+.sex_box > label input{
+  display: none;
+}
+.sex_box > label span{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(51, 51, 51, 0.7);
+  display: inline-block;
+  margin-right: 25px;
+  display: flex;
+  align-items: center;
+}
+.sex_box > label span::before{
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 1px solid #7E7E82;
+  box-sizing: border-box;
+  display: block;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.sex_box > label input:checked + span::before{
+  border: 3px solid #F19515;
+}
+.registration_form .password{
+  width: 100%;
+  background: #F7F7F9;
+  border: 1px solid #F19515;
+  box-sizing: border-box;
+  box-shadow: -1px 3px 15px rgba(241, 149, 21, 0.25);
+  border-radius: 2px;
+  height: 45px;
+  padding: 0 25px;
+  margin-bottom: 15px;
+}
+.registration_form .mailing input{
+  display: none;
+}
+.mailing {
+  width: 100%;
+}
+.mailing span{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(51, 51, 51, 0.7);
+  display: inline-block;
+  margin-right: 25px;
+  display: flex;
+  align-items: center;
+}
+.mailing span::before{
+  content: "";
+  width: 17px;
+  height: 17px;
+  border: 2px solid #F19515;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  display: block;
+}
+.mailing input:checked + span::before{
+  background-image: url(/img/icon/check-ico-white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #F19515;
+}
+.registration_modal{
+  box-shadow: 7px 8px 55px rgba(51, 51, 51, 0.15);
+}
+.registration_modal .login_width{
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+}
+.login_width span{
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(51, 51, 51, 0.7);
+  display: inline-block;
+  margin-right: 25px;
+}
+.login_width .icon_box{
+  display: flex;
+}
+.login_width .icon_box a{
+  width: 35px;
+  height: 35px;
+  display: block;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.login_width .icon_box a:before{
+  content: "";
+  width: 35px;
+  height: 35px;
+  display: block;
+}
+.login_width .icon_box a.insta{
+  background: linear-gradient(180deg, #4956A5 -10%, #DE1D5F 45.37%, #FAA32F 100%);
+}
+.login_width .icon_box a.insta:before{
+  background: url(/img/icon/social-color-ico-insta.svg) center no-repeat;
+}
+.login_width .icon_box a.vk{
+  background: #4A76A8;
+}
+.login_width .icon_box a.vk:before{
+  background: url(/img/icon/social-color-ico-vk.svg) center no-repeat;
+}
+.login_width .icon_box a.facebook{
+  background: #1877F2;
+}
+.login_width .icon_box a.facebook:before{
+  background: url(/img/icon/social-color-ico-facebook.svg) center no-repeat;
+}
+.login_width .icon_box a.ok{
+  background: #EE8208;
+}
+.login_width .icon_box a.ok:before{
+  background: url(/img/icon/social-color-ico-ok.svg) center no-repeat;
+}
+.singin_form input{
+  width: 100%;
+  background: #F7F7F9;
+  border: 1px solid #EBEBEB;
+  box-sizing: border-box;
+  border-radius: 2px;
+  height: 45px;
+  padding: 0 25px;
+  margin-bottom: 15px;
+  max-width: 370px;
+}
+.singin_form input.password{
+  border: 1px solid #F19515;
+  box-shadow: -1px 3px 15px rgba(241, 149, 21, 0.25);
+}

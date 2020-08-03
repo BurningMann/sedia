@@ -1,0 +1,119 @@
+﻿.opt_section{
+    background: #F7F7F9;
+    padding: 70px 0;
+}
+.opt_section h1{
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 39px;
+    width: 100%;
+    text-align: center; 
+    margin-bottom: 20px;
+}
+.opt_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.opt_wrapper .text_box{
+    width: calc(33% - 12px);
+
+}
+.callback_section{
+    height: 500px;
+    background: url(/img/bg-4.png) center/cover no-repeat;
+    margin-top: 150px;
+}
+.callback_wrapper{
+    background: #fff;
+    box-shadow: 7px 8px 55px rgba(51, 51, 51, 0.15);
+    border-radius: 5px;
+    top: -50px;
+    height: 470px;
+    box-sizing: border-box;
+    padding: 70px 30px 70px 100px;
+    display: flex;
+
+}
+.form_box{
+    width: 100%;
+    max-width:655px;
+}
+.form_box .title{
+    font-size: 26px;
+    line-height: 39px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.callback_form{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0 0;
+}
+.callback_form input{
+    flex-grow: 1;
+    height: 45px;
+    background: #F7F7F9;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin: 0 20px 20px 0;
+    padding-left: 20px;
+}
+.callback_form input:nth-child(3){
+    margin: 0 0 20px 0;
+}
+.callback_form textarea{
+    background: #F7F7F9;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    border-radius: 2px;
+    resize: none;
+    width:100%;
+    height: 90px;
+    margin-bottom: 20px;
+    padding: 20px 0 0 20px;
+}
+.button_container{
+    display: flex;
+    align-items: center;
+}
+.callback_form .button_container button{
+    width: 200px;
+    height: 50px;
+    background: #F19515;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 35px;
+    color: #FFFFFF;
+    border:none;
+    margin-right: 20px;
+}
+.callback_form .button_container .alert{
+    font-size: 12px;
+    line-height:15px;
+    color: #5E5E60;
+    
+}
+.callback_wrapper .img_box{
+    width: 415px;
+}
+.callback_wrapper .img_box img{
+    max-width: fit-content;
+    position: absolute;
+    top: -120px;
+    left: -50px;
+}
+.callback_wrapper .img_box::before{
+    content: "";
+    height: calc(100% + 140px);
+    width: 200px;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: -70px;
+    background: url(/img/bg-2.png);
+}

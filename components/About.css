@@ -1,0 +1,116 @@
+﻿.about_top_text_wrapper{
+  height: 450px;
+  background: url(/img/bg-3.png);
+  margin-bottom: 135px;
+}
+.about_top_text_wrapper .text{
+  background: #fff;
+  padding: 70px 100px;
+  box-sizing: border-box;
+  top: 50px;
+  box-shadow: 7px 8px 55px rgba(51, 51, 51, 0.15);
+  border-radius: 5px;
+
+}
+.about_top_text_wrapper .text h1{
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.out_team_section{
+  margin:70px 0;
+}
+.out_team_section .title{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+font-size: 26px;
+line-height: 32px;
+margin-bottom: 90px;
+}
+.out_team_wrapper{
+  display: flex;
+  background: linear-gradient(to bottom, #FFFFFF 20%, #F7F7F9 20%);
+}
+.out_team_wrapper:before{
+  content: "";
+  position: absolute;
+  display: block;
+  height: 90%;
+  width: 1000%;
+  top: 10%;
+  right: 80%;
+  background: url(/img/bg-2.png) center repeat;
+}
+.out_team_wrapper:after{
+  content: "";
+  position: absolute;
+  display: block;
+  height: 60%;
+  width: 50%;
+  top: -12%;
+  right: 0;
+  background: url(/img/bg-2.png) center repeat;
+}
+.out_team_element{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 20%;
+  z-index: 3;
+}
+.out_team_wrapper .img_box{
+  display: flex;
+
+width: 100%;
+
+}
+.out_team_wrapper .text_block{
+  
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.out_team_wrapper .out_team_element:first-child .text_block:before{
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 1000%;
+  right: 100%;
+  background: #fff;
+  z-index: 4;
+}
+
+.out_team_element .name{
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+}
+.out_team_element .profession{
+  font-size: 13px;
+  line-height: 18px;
+  color: #F19515;
+  margin: 10px 0;
+}
+.out_team_element .descr{
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+  padding: 0 20px;
+}
+.partner_box{
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.partners_section .slick-track{
+  display: flex;
+  align-items: center;
+}

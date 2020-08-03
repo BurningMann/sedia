@@ -1,0 +1,202 @@
+﻿footer {
+	width: 100%;
+	background: #F7F7F9;
+	margin-top: 85px;
+}
+.mailing_wrapper{
+	display: flex;
+	top: -2rem;
+}
+.mail_box{
+	background: #D9E1F1;
+	border-radius: 3px 3px 0px 0px;
+	padding-left:100px;
+	width: 70%;
+	height: 340px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.mail_box .label{
+	font-size: 12px;
+line-height: 14px;
+margin-bottom: 40px;
+}
+.mail_box .label:before{
+	content: "";
+	width: 28px;
+	height: 23px;
+	display: block;
+	float: left;
+	background: url(/img/icon/mailing-ico.svg);
+	margin-right: 20px;
+}
+.mail_box .title{
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 32px;
+	margin-bottom: 20px;
+}
+.mail_box .descr{
+	font-size: 15px;
+	line-height: 22px;
+	color: #5E5E60;
+	width: 100%;
+	max-width: 580PX;
+}
+.mail_box .mailing_form{
+	width: 100%;
+	max-width: 485px;
+	margin-top: 25px;
+}
+.mail_box .mailing_form input{
+	height: 50px;
+	padding: 0 50px 0 20px;
+	width: 100%;
+	border: none;
+	box-sizing: border-box;
+}
+.mail_box .mailing_form button{
+	background: inherit;
+	border: none;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	right: 30px;
+	top: 0;
+	
+}
+.mailing_slider{
+width: 30%;
+left: -5rem;
+top: 40px;
+height: 300px;
+overflow: hidden;
+}
+.footer_box{
+	border-top: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+	padding: 45px 0;
+	margin-top: -32px;
+}
+.footer_box .container{
+	display: flex;
+}
+.footer_box .container{
+	display: flex;
+}
+.footer_contact{
+	width: 25%;
+}
+.footer_menu{
+	width: 55%;
+	display: flex;
+}
+.footer_menu_element{
+	width:25%;
+}
+.footer_menu_element.catalog_menu{
+	width:50%
+}
+.footer_menu_element.catalog_menu ul{
+	display: flex;
+	flex-wrap: wrap;
+	line-height: 20px;
+}
+.footer_menu_element.catalog_menu ul li{
+	width: 50%;
+}
+.footer_menu li{
+	list-style-type: none;
+	margin: 7px 0;
+}
+.footer_menu li a{
+	font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+}
+.footer_menu ul{
+	padding: 0;
+}
+.footer_menu_element .title{
+	font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+margin-bottom: .5rem;
+display: inline-block;
+}
+.footer_delivery{
+	width: 20%;
+}
+.footer_delivery > span{
+	font-size: 12px;
+line-height:10px;
+
+color: rgba(51, 51, 51, 0.7);
+}
+.footer_delivery > span:before{
+	content: "";
+	width: 28px;
+	height: 40px;
+	display: block;
+	float: left;
+	background: url(/img/icon/delivery-ico.svg) top center no-repeat;
+	margin-right: 10px;
+}
+.delivery_button{
+	width: 200px;
+	height: 50px;
+	background: #333333;
+	border-radius: 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:#fff;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 35px;
+	margin-top: 30px;
+	cursor: pointer;
+}
+footer .bottom_line .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 0;
+}
+footer .year{
+	font-size: 12px;
+line-height: 22px;
+text-align: center;
+color: #5E5E60;
+}
+footer .payment_system{
+	display: flex;
+}
+footer .payment_system .payment{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+footer .payment_system .payment::before{
+	content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+footer .payment_system .payment.visa::before{
+	background: url(/img/icon/payment-1.svg) center no-repeat;
+}
+footer .payment_system .payment.mastercard::before{
+	background: url(/img/icon/payment-2.svg) center no-repeat;
+}
+footer .payment_system .payment.purse::before{
+	background: url(/img/icon/payment-3.svg) center no-repeat;
+}
+footer .payment_system .payment.bank::before{
+	background: url(/img/icon/payment-4.svg) center no-repeat;
+}
