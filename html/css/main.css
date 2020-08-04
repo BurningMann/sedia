@@ -904,17 +904,32 @@ header {
 	height: 35px;
 	display: block;
 }
+.img_box .card_icon_box>a:hover {
+	background: #F19515;
+}
 .img_box .card_icon_box>a.favorite:before {
 	background: url(../img/icon/card-ico-1.svg) center no-repeat;
+}
+.img_box .card_icon_box>a.favorite:hover:before {
+	background: url(../img/icon/card-ico-1-active.svg) center no-repeat;
 }
 .img_box .card_icon_box>a.tocart:before {
 	background: url(../img/icon/card-ico-2.svg) center no-repeat;
 }
+.img_box .card_icon_box>a.tocart:hover:before {
+	background: url(../img/icon/card-ico-2-active.svg) center no-repeat;
+}
 .img_box .card_icon_box>a.more:before {
 	background: url(../img/icon/card-ico-3.svg) center no-repeat;
 }
+.img_box .card_icon_box>a.more:hover:before {
+	background: url(../img/icon/card-ico-3-active.svg) center no-repeat;
+}
 .img_box .card_icon_box>a.share:before {
 	background: url(../img/icon/card-ico-4.svg) center no-repeat;
+}
+.img_box .card_icon_box>a.share:hover:before {
+	background: url(../img/icon/card-ico-4-active.svg) center no-repeat;
 }
 .catalog .card:hover .card_icon_box {
 	display: flex;
