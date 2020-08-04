@@ -220,7 +220,20 @@ window.onload = function(){
         }
     })
     /* End вывод форм */
-
+/* функционал меню каталога */
+$(".catalog_menu_element_major.open .catalog_menu_element_minor").css("display","block")
+ $(".catalog_menu_element_major .title").click(function(){
+    if($(this).closest(".catalog_menu_element_major").hasClass("open")){
+        $(this).closest(".catalog_menu_element_major").find(".catalog_menu_element_minor").slideUp();
+        $(this).closest(".catalog_menu_element_major").removeClass("open");
+    }else{
+        $(".catalog_menu_element_major.open .catalog_menu_element_minor").slideUp();
+        $(".catalog_menu_element_major.open").removeClass("open");
+        $(this).closest(".catalog_menu_element_major").addClass("open")
+        $(this).closest(".catalog_menu_element_major").find(".catalog_menu_element_minor").slideDown()
+    }
+ })
+/* end функционал меню каталога */
 }
 
 

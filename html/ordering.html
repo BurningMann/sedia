@@ -388,15 +388,20 @@
 							</div>
 						</div>
 						<div class="delivery_type_wrapper">
-							<label class="delivery_type courier"><input name="delivery" type="radio" value="courier"></label>
-							<div class="box">
-								<label class="delivery_type courier"><span class="title">Доставка курьером</span></label>
-								<p class="descr"><label class="delivery_type courier">(зависит от суммы заказа)</label></p>
-							</div><label class="delivery_type pickup active"><input name="delivery" type="radio" value="pickup"></label>
-							<div class="box">
-								<label class="delivery_type pickup active"><span class="title">Самовывоз со склада:</span></label>
-								<p class="descr"><label class="delivery_type pickup active">Бесплатно. (Брест, Гродно, Минск, Гомель, Могилев, Пинск, Брянск(РФ)</label></p>
-							</div>
+							<label class="delivery_type courier">
+								<input type="radio" name="delivery" value="courier"/>
+								<div class="box">
+									<span class="title">Доставка курьером</span>
+									<p class="descr">(зависит от суммы заказа)</p>
+								</div>
+							</label>
+							<label class="delivery_type pickup active">
+								<input type="radio" name="delivery" value="pickup" checked/>
+								<div class="box">
+									<span class="title">Самовывоз со склада:</span>
+									<p class="descr">Бесплатно. (Брест, Гродно, Минск, Гомель, Могилев, Пинск, Брянск(РФ)</p>
+								</div>
+							</label>
 						</div>
 						<div class="delivery_adress_tab_content pickup"><span class="point_name">г.Могилев, ул. Урицкого, д.78</span> <img src="img/map.png"></div>
 						<div class="delivery_adress_tab_content courier disabel">
@@ -412,19 +417,22 @@
 							</div>
 						</div>
 						<div class="payment_wrapper">
-							<label class="payment_type" for=""><input name="payment" type="radio"></label>
-							<div class="box">
-								<label class="payment_type" for=""><span class="title">Оплата наличными</span></label>
-							</div><label class="payment_type" for=""><input name="payment" type="radio"></label>
-							<div class="box">
-								<label class="payment_type" for=""><span class="title">Оплата картой онлайн</span></label>
-							</div><label class="payment_type disabled halva" for=""><input name="payment" type="radio"></label>
-							<div class="box">
-								<label class="payment_type disabled halva" for=""><span class="title">Оплата картой рассрочки “ХАЛВА”</span></label>
-							</div><label class="payment_type disabled karta_pokupok" for=""><input name="payment" type="radio"></label>
-							<div class="box">
-								<label class="payment_type disabled karta_pokupok" for=""><span class="title">Оплата картой рассрочки “КАРТА ПОКУПОК”</span></label>
-							</div>
+							<label for="" class="payment_type">
+								<input type="radio" name="payment"/>
+								<div class="box"><span class="title">Оплата наличными</span></div>
+							</label>
+							<label for="" class="payment_type">
+								<input type="radio" name="payment"/>
+								<div class="box"><span class="title">Оплата картой онлайн</span></div>
+							</label>
+							<label for="" class="payment_type disabled halva">
+								<input type="radio" name="payment" disabled/>
+								<div class="box"><span class="title">Оплата картой рассрочки “ХАЛВА”</span></div>
+							</label>
+							<label for="" class="payment_type disabled karta_pokupok">
+								<input type="radio" name="payment" disabled/>
+								<div class="box"><span class="title">Оплата картой рассрочки “КАРТА ПОКУПОК”</span></div>
+							</label>
 						</div>
 						<div class="top_bar">
 							<div>
@@ -559,6 +567,85 @@
 				</div>
 			</div>
 		</footer>
+	</div>
+	<div class="modal_bg">
+		<div class="thx_modal zayavka">
+			<div class="close_button"></div>
+			<div class="modal_content">
+				<span class="name">Спасибо за заявку!</span>
+				<p class="text">С вами свяжутся в ближайшее время</p>
+			</div>
+		</div>
+		<div class="thx_modal pokupka">
+			<div class="close_button"></div>
+			<div class="modal_content">
+				<span class="name">Благодарим вас за покупку!</span>
+				<p class="text">С вами свяжутся в ближайшее время</p>
+			</div>
+		</div>
+		<div class="buy-in-one">
+			<div class="close_button"></div>
+			<div class="modal_content">
+				<div class="img_box"><img alt="" src="img/produvt-page-img-1.png"></div>
+				<div class="detail_box">
+					<div class="rating_wrapper">
+						<div class="rating_box">
+							<span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star half"></span><span class="star empty"></span>
+						</div>
+					</div><span class="name">Название товара</span>
+					<div class="price_box">
+						<span class="old_price">305.00 р.</span><span class="price">305.00 р.</span>
+					</div>
+					<form action="" class="buy-in-one-form">
+						<div class="input_box">
+							<input placeholder="Имя:" type="text"> <input placeholder="Телефон:" type="text"> <input placeholder="E-mail:" type="text">
+						</div><button type="submit">КУПИТЬ</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="registration_modal">
+			<div class="content_box">
+				<div class="tab_section">
+					<div class="registration_tab active" data-tab="registration">
+						Регистрация
+					</div>
+					<div class="singin_tab" data-tab="singin">
+						Вход
+					</div>
+				</div>
+				<div class="tab_content">
+					<div class="registration active">
+						<form action="" class="registration_form">
+							<div class="input_box">
+								<input placeholder="Имя:" type="text"> <input placeholder="Телефон:" type="text"> <input placeholder="E-mail:" type="text">
+							</div>
+							<div class="sex_box">
+								<span>Укажите Ваш пол:</span> <label><input id="" name="sex" type="radio"><span>Женский</span></label> <label><input id="" name="sex" type="radio"><span>Мужской</span></label>
+							</div><input class="password" placeholder="Пароль:" type="text"> <label class="mailing"><input name="subscription" type="checkbox"><span>Подписаться на нашу рассылку</span></label>
+						</form>
+						<div class="login_width">
+							<span>Войти с помощью:</span>
+							<div class="icon_box">
+								<a class="insta" href="#"></a> <a class="vk" href="#"></a> <a class="facebook" href="#"></a> <a class="ok" href="#"></a>
+							</div>
+						</div>
+					</div>
+					<div class="singin">
+						<form action="" class="singin_form">
+							<input class="login" placeholder="Имя:" type="text"> <input class="password" placeholder="Пароль:" type="text">
+						</form>
+						<div class="login_width">
+							<span>Войти с помощью:</span>
+							<div class="icon_box">
+								<a class="insta" href="#"></a> <a class="vk" href="#"></a> <a class="facebook" href="#"></a> <a class="ok" href="#"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="img_box_registration"></div>
+		</div>
 	</div>
 	<script src="js/jquery-3.4.1.min.js">
 	</script> 
