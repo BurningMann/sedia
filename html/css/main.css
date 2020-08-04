@@ -118,6 +118,9 @@ header {
 	align-items: center;
 	margin-right: 1rem;
 }
+.left_social_section .icon_element:hover{
+	background: #F19515;
+}
 .icon_element:before {
 	content: "";
 	display: block;
@@ -127,21 +130,40 @@ header {
 .icon_element.instagram:before {
 	background: url(../img/icon/social-icon-insta.svg) center no-repeat;
 }
+.icon_element.instagram:hover:before {
+	background: url(../img/icon/social-icon-active-instagram.svg) center no-repeat;
+}
 .icon_element.vk:before {
 	background: url(../img/icon/social-icon-vk.svg) center no-repeat;
+}
+.icon_element.vk:hover:before {
+	background: url(../img/icon/social-icon-active-vk.svg) center no-repeat;
 }
 .icon_element.facebook:before {
 	background: url(../img/icon/social-icon-facebook.svg) center no-repeat;
 }
+.icon_element.facebook:hover:before {
+	background: url(../img/icon/social-icon-active-facebook.svg) center no-repeat;
+}
 .icon_element.telegram:before {
 	background: url(../img/icon/social-icon-telegram.svg) center no-repeat;
+}
+.icon_element.telegram:hover:before {
+	background: url(../img/icon/social-icon-active-telegram.svg) center no-repeat;
 }
 .icon_element.ok:before {
 	background: url(../img/icon/social-icon-odnoklasniki.svg) center no-repeat;
 }
+.icon_element.ok:hover:before {
+	background: url(../img/icon/social-icon-active-ok.svg) center no-repeat;
+}
 .icon_element.youtube:before {
 	content: "";
 	background: url(../img/icon/social-icon-youtube.svg) center no-repeat;
+}
+.icon_element.youtube:hover:before {
+	content: "";
+	background: url(../img/icon/social-icon-active-youtube.svg) center no-repeat;
 }
 .right_menu_section {
 	display: flex;
@@ -224,11 +246,20 @@ header {
 .user_ico_box .user {
 	background: url(../img/icon/login-person-ico.svg) center no-repeat;
 }
+.user_ico_box .user_ico_element:hover .user {
+	background: url(../img/icon/login-person-ico-active.svg) center no-repeat;
+}
 .user_ico_box .favorite {
 	background: url(../img/icon/heart-ico.svg) center no-repeat;
 }
+.user_ico_box .favorite:hover {
+	background: url(../img/icon/heart-ico-active.svg) center no-repeat;
+}
 .user_ico_box .cart {
 	background: url(../img/icon/cart-ico.svg) center no-repeat;
+}
+.user_ico_box .cart:hover {
+	background: url(../img/icon/cart-ico-active.svg) center no-repeat;
 }
 .user_ico_element .count {
 	font-size: 10px;
@@ -252,6 +283,9 @@ header {
 	display: block;
 	float: right;
 	margin-left: 5px;
+}
+.user_ico_box .user_ico_element:hover .open_ico {
+	background: url(../img/icon/user-arrow-ico-active.svg) center no-repeat;
 }
 .main_menu_box {
 	background: #fff;
@@ -483,7 +517,8 @@ header {
 .info_section .bg_box {
 	width: 100%;
 	height: 380px;
-	background: url(../img/bg-1.png) center/cover no-repeat;
+	background: url(../img/bg-6.png) center/cover no-repeat;
+	background-attachment: fixed;
 }
 .info_section .container {
 	height: 380px;
