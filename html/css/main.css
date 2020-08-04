@@ -2675,7 +2675,7 @@ footer .payment_system .payment.bank::before {
 	}
 }
 @media screen and (min-width: 998px) {
-	.second_mobile_menu,.menu_line,{
+	.second_mobile_menu,.menu_line{
 		display: none;
 	}
 	.main_menu_box>.container > .user_ico_box{
