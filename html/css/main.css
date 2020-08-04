@@ -2565,12 +2565,18 @@ footer .payment_system .payment.bank::before {
 		margin: 10px 0;
 	}
 }
+
 @media screen and (max-width: 1169px) {
 	.about_top_text_wrapper .text, .about_top_text_wrapper {
 		height: auto;
 	}
 	.partners_section .slick-dots, .you_watched .slick-dots {
 		bottom: -40px;
+	}
+}
+@media screen and (min-width: 998px) {
+	.second_mobile_menu{
+		display: none;
 	}
 }
 @media screen and (max-width: 998px) {
@@ -2660,6 +2666,7 @@ footer .payment_system .payment.bank::before {
 		box-sizing: border-box;
 		top: auto;
 	}
+
 	.about_top_text_wrapper .text {
 		padding: 30px 20px;
 	}
@@ -2692,6 +2699,9 @@ footer .payment_system .payment.bank::before {
 	}
 	.shops_name_box {
 		width: 50%;
+	}
+	.right_menu_section{
+		display: none;
 	}
 }
 @media screen and (max-width: 900px) {
@@ -2765,9 +2775,6 @@ footer .payment_system .payment.bank::before {
 	.top_line_wrapper {
 		flex-direction: column;
 		align-items: center;
-	}
-	.right_menu_section {
-		padding: 20px 0 0;
 	}
 	.out_team_element {
 		width: calc(50% - 12px);
