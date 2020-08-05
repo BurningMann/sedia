@@ -159,10 +159,28 @@ window.onload = function(){
         focusOnSelect: true,
         prevArrow: '<div class="prev_arrow">',
         nextArrow: '<div class="next_arrow">',
-        asNavFor: '.main_product_slider'
+        asNavFor: '.main_product_slider',
+        responsive: [
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              arrows: false,
+            }
+          },
+          {
+            breakpoint: 500,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              arrows: false,
+            }
+          }
+        ]
     })
     /* перевод картинки svg в код */
-    $('.advantages_element img').each(function(){
+    $('.advantages_element img, .mailing_form img').each(function(){
         var $img = $(this);
         var imgClass = $img.attr('class');
         var imgURL = $img.attr('src');
@@ -338,3 +356,8 @@ $(".tabs_panel > div").click(function(){
    $(this).closest(".tabs_panel").siblings(".tabs_content").find(".active").removeClass("active")
    $('.'+ tab_name).addClass("active")
 })
+if(innerWidth <= 500){
+  console.log("qwe")
+  $(".right_details_section h1").insertBefore($(".left_slider_section"))
+  
+}

@@ -67,6 +67,9 @@ margin-bottom: 40px;
 	top: 0;
 	
 }
+.mail_box .mailing_form button:hover path{
+	fill: #F19515;
+}
 .mailing_slider{
 width: 30%;
 left: -5rem;

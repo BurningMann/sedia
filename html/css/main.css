@@ -121,6 +121,9 @@ header {
 .left_social_section .icon_element:hover{
 	background: #F19515;
 }
+.left_social_section .icon_element:last-child{
+	margin-right: 0;
+}
 .icon_element:before {
 	content: "";
 	display: block;
@@ -1234,7 +1237,7 @@ header {
 .star.empty {
 	background: url(../img/icon/empty-star.svg);
 }
-.right_details_section h1 {
+.product_wrapper h1 {
 	font-weight: bold;
 	font-size: 26px;
 	line-height: 39px;
@@ -1614,7 +1617,8 @@ header {
 	align-items: center;
 }
 .callback_form .button_container button {
-	width: 200px;
+	width: 100%;
+	max-width: 200px;
 	height: 50px;
 	background: #F19515;
 	border-radius: 2px;
@@ -1627,6 +1631,9 @@ header {
 	color: #FFFFFF;
 	border: none;
 	margin-right: 20px;
+}
+.callback_form .button_container button:hover{
+	box-shadow: 0px 0px 20px rgba(241, 149, 21, 0.7);
 }
 .callback_form .button_container .alert {
 	font-size: 12px;
@@ -1937,7 +1944,7 @@ header {
 .delivery_adress_tab_content.pickup .point_name {
 	font-size: 14px;
 	line-height: 21px;
-	padding: 0 40px;
+	padding: 0  0 0 40px;
 }
 .delivery_adress_tab_content.pickup .point_name:before {
 	content: "";
@@ -2445,6 +2452,9 @@ footer {
 	right: 30px;
 	top: 0;
 }
+.mail_box .mailing_form button:hover path{
+	fill: #F19515;
+}
 .mailing_slider {
 	width: 30%;
 	left: -5rem;
@@ -2535,6 +2545,9 @@ footer {
 	line-height: 35px;
 	margin-top: 30px;
 	cursor: pointer;
+}
+.delivery_button:hover{
+	background: #F19515;
 }
 footer .bottom_line .container {
 	display: flex;
@@ -2713,6 +2726,9 @@ footer .payment_system .payment.bank::before {
 	}
 	.contact_wrapper>div {
 		margin: 10px 0;
+	}
+	.about_top_text_wrapper{
+		background: none;
 	}
 }
 
@@ -2914,6 +2930,12 @@ footer .payment_system .payment.bank::before {
 	.header_main_section{
 		padding: 1.5rem 0 0;
 	}
+	.catalog_menu{
+		padding-right: 0;
+	}
+	.main_catalog_card{
+		margin: 0 12.5px 25px 12.5px;
+	}
 }
 @media screen and (max-width: 800px) {
 	.advantages_element {
@@ -2979,6 +3001,9 @@ footer .payment_system .payment.bank::before {
 	.buy-in-one-form .input_box>input {
 		width: 100%;
 	}
+	.catalog_about_section{
+		margin: 0 auto 70px;
+	}
 }
 @media screen and (max-width: 600px) {
  	.main_tabs_section .tabs_panel {
@@ -3022,6 +3047,14 @@ footer .payment_system .payment.bank::before {
 	.callback_section{
 		height: auto;
 	}
+	.left_slider_section{
+		width: 100%;
+	}
+}
+@media screen and (min-width: 500px) {
+	.main_slider .slide {
+		background: none !important;
+	}
 }
 @media screen and (max-width: 500px) {
 	.advantages_element {
@@ -3050,9 +3083,10 @@ footer .payment_system .payment.bank::before {
 	.main_slider .slick-dots{
 		bottom: -30px;
 	}
-/* 	.main_slider .slide .slider_img {
+	.main_slider .slide .slider_img {
 		display: none;
-	} */
+	}
+
 	.main_slider .slide .slider-text {
 		width: 100%;
 		text-align: center;
@@ -3123,7 +3157,7 @@ footer .payment_system .payment.bank::before {
 		flex-wrap: wrap;
 	}
 	.breadcrumbs_box .bredcumb{
-		margin-bottom: 10px;
+		margin:5px 20px 5px 0;
 	}
 	.contact_wrapper .main_number{
 		flex-direction: column;
@@ -3149,7 +3183,45 @@ footer .payment_system .payment.bank::before {
 	.callback_form .button_container .alert{
 		padding-top: 10px;
 	}
-
+	.breadcrumbs_box .bredcumb{
+		padding-right: 5px;
+		margin-right: 5px;
+	}
+	.payment_type{
+		padding: 15px 0 15px 45px;
+	}
+	.top_bar>div{
+		font-size: 12px;
+		width: 100%;
+		text-align: center;
+	}
+	.input_box>input{
+		width: 100%;
+	}
+	.result_box{
+		padding: 24px 10px;
+	}
+	.total_price>span{
+		padding: 0 0 0 20px;
+	}
+	.total_produvt_count{
+		padding: 0 20px;
+	}
+	.contact_wrapper{
+		padding: 30px 10px;
+		justify-content: flex-start;
+	}
+	.contact_wrapper .left_social_section .icon_element{
+		margin-bottom: 5px;
+		margin-right: 5px;
+	}
+	.kontact_section h1{
+		font-size: 22px;
+		text-align: center;
+	}
+	.shops_name_box{
+		padding: 20px;
+	}
 }
 @media screen and (max-width: 460px) {
 	.out_team_wrapper {
@@ -3176,5 +3248,11 @@ footer .payment_system .payment.bank::before {
 	}
 	.page_count{
 		margin-bottom: 10px;
+	}
+	.main_product_slider{
+		margin-bottom: 0;
+	}
+	.additional_product_slider{
+		display: none !important;
 	}
 }

@@ -162,7 +162,7 @@ window.onload = function(){
         asNavFor: '.main_product_slider'
     })
     /* перевод картинки svg в код */
-    $('.advantages_element img').each(function(){
+    $('.advantages_element img, .mailing_form img').each(function(){
         var $img = $(this);
         var imgClass = $img.attr('class');
         var imgURL = $img.attr('src');
