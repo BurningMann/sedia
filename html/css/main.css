@@ -2714,12 +2714,6 @@ footer .payment_system .payment.bank::before {
 	.product_info_section {
 		overflow-x: scroll;
 	}
-	.product_info_section .top_bar {
-		width: 1200px;
-	}
-	.product_info_section .order_product_element {
-		width: 1200px;
-	}
 	.contact_wrapper {
 		flex-wrap: wrap;
 		justify-content: center;
@@ -2956,6 +2950,35 @@ footer .payment_system .payment.bank::before {
 	.buyer_info_wrapper .input_box {
 		width: 100%;
 		margin: 0 0 20px 0;
+	}
+	.product_info_section .top_bar{
+		display: none;
+	}
+	.product_info_section .order_product_element{
+		width: 100%;
+		box-sizing: border-box;
+		flex-direction: column;
+	}
+	.order_product_element .product{
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.order_product_element .price{
+		align-items: center;
+		width: 100%;
+	}
+	.order_product_wrapper .count{
+		width: 100%;
+	}
+	.product_count_box{
+		margin: auto;
+	}
+	.product_count_box+.dell_box{
+		left: calc(50% - 8px);
+		right: auto;
+		width: 17px;
 	}
 }
 @media screen and (max-width: 700px) {
