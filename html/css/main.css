@@ -2680,7 +2680,10 @@ footer .payment_system .payment.bank::before {
 	-o-transform: rotate(180deg);
 	transform: rotate(180deg);
 }
-
+.unit{
+	display: inline-block;
+	font-weight: bold;
+}
 
 /* MEDIA */
 
@@ -2723,6 +2726,9 @@ footer .payment_system .payment.bank::before {
 	}
 	.about_top_text_wrapper{
 		background: none;
+	}
+	.about_top_text_wrapper .text{
+		top: 0;
 	}
 }
 
@@ -3027,6 +3033,9 @@ footer .payment_system .payment.bank::before {
 	.catalog_about_section{
 		margin: 0 auto 70px;
 	}
+	.breadcrumbs_box{
+		margin: 30px 0;
+	}
 }
 @media screen and (max-width: 600px) {
  	.main_tabs_section .tabs_panel {
@@ -3245,6 +3254,7 @@ footer .payment_system .payment.bank::before {
 	.shops_name_box{
 		padding: 20px;
 	}
+
 }
 @media screen and (max-width: 460px) {
 	.out_team_wrapper {
